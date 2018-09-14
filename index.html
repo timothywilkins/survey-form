@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Survey Form</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  </head>
-  <body>
-  <h1 class="text-center" id="title">Survey Form</h1>
-  <p class="text-center" id="description">This is the description for this survey form.</p>
+</head>
+
+<body>
+    <h1 class="text-center" id="title">Survey Form</h1>
+    <p class="text-center" id="description">This is the description for this survey form.</p>
     <form>
         <div class="form-group" id="survey-form">
             <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
         </div>
         <div class="form-group">
             <label for="email">Email</label>
-            <input type="text" class="form-control" id="email" placeholder="Enter your email">
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
         </div>
+        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
     </form>
 </body>
 
