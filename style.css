@@ -1,0 +1,9 @@
+body {
+    background-color:#eeeeee !important;
+    display:flex;
+    justify-content:center;
+}
+.form-container {
+    width:60vw;
+    background-color:#ffffff;
+}
