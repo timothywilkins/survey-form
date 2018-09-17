@@ -1,9 +1,16 @@
-body {
-    background-color:#eeeeee !important;
-    display:flex;
-    justify-content:center;
+
+h1 {
+    font-weight: 400!important;
 }
-.form-container {
-    width:60vw;
-    background-color:#ffffff;
+legend {
+    font-size: 1.7rem!important;
+}
+.navbar{
+    height:100px;
+    background-color:rgb(100, 193, 255);
+    font-weight:800;
+}
+
+.fab {
+    font-size:3em;
 }

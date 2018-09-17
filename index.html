@@ -7,112 +7,188 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="mt-4 form-container">
-        <h1 class="text-center" id="title">Private Lesson Sign-up Request</h1>
-        <p class="text-center" id="description">Fill in the sign-up request form and submit it to our office so we can
-            pair you or your child to one of are many talented in-house tutors.</p>
+    <div class="page-header container">
+        <h1>Something Music Image Logo</h1>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram"></i>
+        
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+            Something Music
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Lessons
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Brass & Woodwind Instruments</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Catalog of Music
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Brass & Woodwind Instruments</a>
+                        <a class="dropdown-item" href="#">Drums & Percussion</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Guitar</a>
+                        <a class="dropdown-item" href="#">Keyboar& Singer/Songwriter</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="mt-4 py-2 form-container container">
+        <h1 class="text-center my-5" id="title">Private Lesson Sign-up Request</h1>
+        <p class="text-center px-5 col-8 mx-auto" id="description">Fill in the sign-up request form and submit it toour
+            office so we can pair you to one of are many talented in-house tutors.</p>
+        <hr>
         <form class="px-4" id="survey-form">
-            <div class="form-group" id="survey-form">
-                <label for="name" id="name-label">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-            </div>
-            <div class="form-group">
-                <label for="email" id="email-label">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-            </div>
-            <div class="form-group row">
-                <label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
-                <div class="col-10">
-                    <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+
+            <fieldset class="form-group">
+                <legend class="col-form-legend col-sm-8 mx-auto">Contact Info</legend>
+                <!-- NAME -->
+                <div class="form-group form-row justify-content-center">
+                    <div class="col-md-8 form-group" id="survey-form">
+
+                        <label for="name" id="name-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
                 </div>
-            </div>
-            <div class="form-group">
-                <label for="inputAddress">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
-            <div class="form-group">
-                <label for="inputAddress2">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity">
+
+                <!-- NUMBER AND EMAIL -->
+                <div class="form-group form-row justify-content-center">
+                    <div class="col-md-3 form-group">
+
+                        <label for="example-tel-input">Number</label>
+                        <input class="form-control" type="tel" placeholder="1-(555)-555-5555" id="example-tel-input">
+
+                    </div>
+                    <div class="col-md-5 form-group">
+                        <label for="email" id="email-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
                 </div>
-                <div class="form-group col-md-4">
-                    <label for="inputState">State</label>
-                    <select id="inputState" class="form-control">
-                        <option selected>Choose...</option>
-                        <option>...</option>
+            </fieldset>
+            <hr>
+            <!-- Instrument info-->
+            <fieldset class="form-group mb-5">
+                <legend class="col-form-legend col-sm-8 mx-auto">Instruments</legend>
+                <div class="form-group">
+                    <label for="dropdown" class="d-block mx-auto col-8">What area of focus are you interested in?</label>
+                    <select class="form-control col-8 mx-auto" id="dropdown">
+                        <option>Flute</option>
+                        <optioni>Oboe</optioni>
+                        <option>Clarinet</option>
+                        <option>Bassoon</option>
+                        <option>French Horn</option>
+                        <option>Percussion/drum set</option>
+                        <option>Violin</option>
+                        <option>Viola</option>
+                        <option>Cello</option>
+                        <option>Bass</option>
+                        <option>Guitar</option>
+                        <option>Bass Guitar</option>
                     </select>
                 </div>
-                <div class="form-group col-md-2">
-                    <label for="inputZip">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
+
+                <div class="col-sm-8 mx-auto">
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                            checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            I need to rent or buy an instrument
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            I have an instrument but it might need some tuning-up
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            I'm good to go!
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-group form-row justify-content-center">
+                <div class="col-md-10">
+                    <label for="exampleFormControlTextarea1">Do you have any prior experience? If not, it's OK to leave
+                        this blank.</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">
+                    </textarea>
                 </div>
             </div>
-            <!-- Section used to pass FCC test -->
-            <!-- <div class="form-group">
-        <label for="example-number-input" id="number-label">Number</label>
-        <input class="form-control" type="number" value="42" id="number" min="1" max="10" placeholder="5">
-      </div> -->
-            <div class="form-group">
-                <label for="dropdown">Example select</label>
-                <select class="form-control" id="dropdown">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
+            <div class="form-group form-row justify-content-center">
+                <div class="col-md-10">
+                    <label for="exampleFormControlTextarea1">What is your availability?</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">
+                        </textarea>
+                </div>
             </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                    checked>
-                <label class="form-check-label" for="exampleRadios1">
-                    Default radio
-                </label>
+            <div class="form-group form-row justify-content-center">
+                <div class="col-md-10">
+                    <label for="exampleFormControlTextarea1">What are your goals? What do you want to be able to do or
+                        play?</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">
+                        </textarea>
+                </div>
             </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
-                    Second default radio
-                </label>
+            <div class="form-group form-row justify-content-center">
+                <div class="col-md-10">
+                    <label for="exampleFormControlTextarea1">Please let us know if there is
+                        any additional information you would like to let us know</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">
+            </textarea>
+                </div>
             </div>
-            <div class="form-check disabled">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3"
-                    disabled>
-                <label class="form-check-label" for="exampleRadios3">
-                    Disabled radio
-                </label>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary col-8" id="submit">Submit</button>
             </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="value1" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                    Default checkbox
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="value2" id="defaultCheck2" disabled>
-                <label class="form-check-label" for="defaultCheck2">
-                    Disabled checkbox
-                </label>
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
         </form>
     </div>
 
+
+
+
+
     <script src="myscripts.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/esm/popper-utils.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
